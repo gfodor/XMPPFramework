@@ -697,6 +697,7 @@ enum XMPPStreamConfig
 - (void)addDelegate:(id)delegate delegateQueue:(dispatch_queue_t)delegateQueue
 {
 	// Asynchronous operation (if outside xmppQueue)
+    NSLog(@"hello");
 	
 	dispatch_block_t block = ^{
 		[multicastDelegate addDelegate:delegate delegateQueue:delegateQueue];
